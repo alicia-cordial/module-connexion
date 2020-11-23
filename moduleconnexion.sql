@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 23, 2020 at 08:10 AM
+-- Generation Time: Nov 23, 2020 at 09:43 AM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -39,7 +39,7 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`id`, `login`, `prenom`, `nom`, `password`) VALUES
-(1, 'Mariecharlotte', 'Marie', 'Charlotte', 'mariecharlotte!'),
+(1, 'admin', 'admin', 'admin', 'admin'),
 (2, 'louischarles', 'Louis', 'Charles', 'louloudu69'),
 (3, 'petiteanne', 'Annie', 'Jeanne', 'petiteanniechoco'),
 (4, ' test', 'test', 'test', 'test'),
@@ -53,6 +53,7 @@ INSERT INTO `utilisateurs` (`id`, `login`, `prenom`, `nom`, `password`) VALUES
 (14, 'Ali', 'Ali', 'Ali', 'Ali'),
 (15, 'mimi', 'mimi', 'mimi', 'mimi'),
 (16, 'rara', 'rara', 'rara', 'bebe'),
+(17, 'Mariecharlotte', 'Marie', 'Charlotte', 'mariecharlotte!'),
 (18, 'ichouchou', 'Ichou', 'CHOUCHOU', 'riquette1');
 
 --

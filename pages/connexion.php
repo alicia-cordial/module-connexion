@@ -21,6 +21,16 @@ if(isset($_POST['formconnexion']))
          $_SESSION['prenom'] = $userinfo['prenom'];
          $_SESSION['nom'] = $userinfo['nom'];
          header("Location: profil.php?id=".$_SESSION['id']);
+
+         if($_SESSION['login']== 'admin' AND $_SESSION['password'] == 'admin')
+         {
+          header("Location: admin.php?id=".$_SESSION['id']);
+         }
+
+         elseif ($_SESSION['login']!== 'admin' AND $_SESSION['password'] !== 'admin')
+         {
+          header("Location: profil.php?id=".$_SESSION['id']);
+         }
       } else {
          $erreur = "Mauvais login ou mot de passe !";
       }

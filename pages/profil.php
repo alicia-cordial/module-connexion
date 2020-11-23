@@ -45,7 +45,7 @@ if(isset($_SESSION['id'])) {
       if($password == $password2) {
          $insertmdp = $bdd->prepare("UPDATE utilisateurs SET password = ? WHERE id = ?");
          $insertmdp->execute(array($password, $_SESSION['id']));
-         header('Location: admin.php?id='.$_SESSION['id']);
+         header('Location: profil.php?id='.$_SESSION['id']);
       } else {
          $msg = "Vos deux mdp ne correspondent pas !";
       }
