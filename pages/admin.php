@@ -48,7 +48,7 @@ session_start();
 <h2>Tous nos inscrits</h2>
 
 <?php
-$bdd = mysqli_connect("localhost", "root", "root", "moduleconnexion");
+$bdd = mysqli_connect("localhost", "root", " ", "moduleconnexion");
 $requete = "SELECT * FROM 	utilisateurs WHERE 1;";
 
 $query = mysqli_query($bdd, $requete);

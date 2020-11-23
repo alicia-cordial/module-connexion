@@ -1,6 +1,6 @@
 <?php
 
-$bdd = new PDO('mysql:host=localhost;dbname=moduleconnexion', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=moduleconnexion', 'root', '');
  
 if(isset($_POST['forminscription'])) 
 {
